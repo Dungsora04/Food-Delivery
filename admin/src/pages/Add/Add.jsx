@@ -68,6 +68,7 @@ const Add = () => {
             type="text"
             name="name"
             placeholder="Type here"
+            autoComplete="off"
           />
         </div>
         <div className="add-product-description flex-col">
