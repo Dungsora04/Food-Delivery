@@ -13,6 +13,7 @@
 .list-table-format img {
   width: 50px;
   aspect-ratio: 4/3;
+  object-fit: cover;
 }
 @media (max-width: 600px) {
   .list-table-format {

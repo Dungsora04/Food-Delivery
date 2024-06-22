@@ -14,6 +14,9 @@
 }
 .food-item-info {
   padding: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  aspect-ratio: 2/1; 
 }
 .food-item-name-rating {
   display: flex;
@@ -37,6 +40,7 @@
   font-size: 22px;
   font-weight: 500;
   margin: 10px 0px;
+  padding: 0 20px;
 }
 .food-item-img-container {
   position: relative;
@@ -63,3 +67,4 @@
 .food-item-counter img {
   width: 30px;
 }
+
