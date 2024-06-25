@@ -40,7 +40,7 @@ const StoreContextProvider = (props) => {
     async function loadData() {
       await fetchFoodList();
       if (localStorage.getItem("token")) {
-        setToken(localStorage.getItem("token"));
+        setToken(localStorage.getItem("token")); // keep login after refresh 
       }
     }
     loadData();
