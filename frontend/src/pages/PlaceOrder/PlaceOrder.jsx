@@ -49,7 +49,7 @@ const PlaceOrder = () => {
       const { session_url } = response.data;
       window.location.replace(session_url);
     } else {
-      alert("Error");
+      alert(response.data.message);
     }
   };
 

@@ -61,12 +61,26 @@ const StoreContextProvider = (props) => {
     setCartItems(response.data.cartData);
   };
 
+  // useEffect(() => {
+  //   async function loadData() {
+  //     await fetchFoodList();
+  //     if (localStorage.getItem("token")) {
+  //       setToken(localStorage.getItem("token")); // keep login after refresh
+  //       await loadCartData(localStorage.getItem("token")); // keep cart after refresh
+  //     }
+  //   }
+  //   loadData();
+  // }, []);
+
   useEffect(() => {
     async function loadData() {
       await fetchFoodList();
-      if (localStorage.getItem("token")) {
-        setToken(localStorage.getItem("token")); // keep login after refresh
-        await loadCartData(localStorage.getItem("token")); // keep cart after refresh
+      const storedToken = localStorage.getItem("token");
+      const storedUserName = localStorage.getItem("userName");
+      if (storedToken) {
+        setToken(storedToken);
+        setUserName(storedUserName);
+        await loadCartData(storedToken); // optional: pre-load cart data
       }
     }
     loadData();
