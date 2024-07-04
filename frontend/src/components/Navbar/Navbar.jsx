@@ -6,7 +6,8 @@ import { StoreContext } from "../../context/StoreContext";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
-  const { getTotalCartAmount, token, setToken, userName } = useContext(StoreContext);
+  const { getTotalCartAmount, token, setToken, userName } =
+    useContext(StoreContext);
   const navigate = useNavigate();
 
   const logOut = () => {
@@ -68,7 +69,7 @@ const Navbar = ({ setShowLogin }) => {
                 <p className="username">{userName}</p>
               </li>
               <hr />
-              <li>
+              <li onClick={() => navigate("/myorders")}>
                 <img src={assets.bag_icon} alt="" />
                 <p>Orders</p>
               </li>
