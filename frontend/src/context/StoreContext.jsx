@@ -78,9 +78,9 @@ const StoreContextProvider = (props) => {
       const storedToken = localStorage.getItem("token");
       const storedUserName = localStorage.getItem("userName");
       if (storedToken) {
-        setToken(storedToken);
-        setUserName(storedUserName);
-        await loadCartData(storedToken); // optional: pre-load cart data
+        setToken(storedToken); // keep login after refresh
+        setUserName(storedUserName); // keep username after refresh
+        await loadCartData(storedToken); // keep cart after refresh
       }
     }
     loadData();
