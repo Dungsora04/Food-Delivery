@@ -3,7 +3,7 @@ import userModel from "../models/userModel.js";
 
 // placing user order for frontend
 const placeOrder = async (req, res) => {
-  const frontend_url = "http://localhost:5174";
+  const frontend_url = "http://localhost:5173";
 
   try {
     const newOrder = new orderModel({

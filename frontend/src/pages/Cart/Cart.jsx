@@ -67,13 +67,13 @@ const Cart = () => {
           </button>
         </div>
         <div className="cart-promocode">
-          <div>
+          {/* <div>
             <p>Enter your promo code here</p>
             <div className="cart-promocode-input">
               <input type="text" placeholder="promo code" />
               <button>Submit</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

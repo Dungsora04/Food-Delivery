@@ -7,9 +7,9 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <img className="logo" src={assets.food_logo} alt="" />
           <p>
-            Skip the line, keep the smile. Food delivery made easy with Tomato.
+            Skip the line, keep the smile. Delivery made easy with FOOD.
           </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
@@ -30,12 +30,12 @@ const Footer = () => {
           <h2>GET IN TOUCH</h2>
           <ul>
             <li>+43-321-787-980</li>
-            <li>tomato@email.com</li>
+            <li>food@email.com</li>
           </ul>
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">© 2024 tomato.com - ALL RIGHTS RESERVED</p>
+      <p className="footer-copyright">© 2024 food.com - ALL RIGHTS RESERVED</p>
     </div>
   );
 };

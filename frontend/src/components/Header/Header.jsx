@@ -11,7 +11,7 @@ const Header = () => {
           knew existed. Order your perfect meal today and discover a taste
           sensation that will leave you wanting more.
         </p>
-        <button>View Menu</button>
+        {/* <button>View Menu</button> */}
       </div>
     </div>
   );
